@@ -3,9 +3,17 @@ package com.koreait.board;
 public class BoardVO {
     private int iboard;
     private String title;
+    private String ctnt;
     private String writer;
     private String rdt;
-    private String ctnt;
+
+    public String getCtnt() {
+        return ctnt;
+    }
+
+    public void setCtnt(String ctnt) {
+        this.ctnt = ctnt;
+    }
 
     public int getIboard() {
         return iboard;
@@ -37,13 +45,5 @@ public class BoardVO {
 
     public void setRdt(String rdt) {
         this.rdt = rdt;
-    }
-
-    public String getCtnt() {
-        return ctnt;
-    }
-
-    public void setCtnt(String ctnt) {
-        this.ctnt = ctnt;
     }
 }
