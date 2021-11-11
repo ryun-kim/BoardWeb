@@ -19,6 +19,8 @@
             <input type="reset" value="초기화">
         </div>
     </form>
+    <div>
 
+    </div>
 </body>
 </html>
