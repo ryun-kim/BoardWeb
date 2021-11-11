@@ -10,6 +10,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글 리스트</title>
+    <style>
+        table{
+            background-image: url(https://picsum.photos/500/500) ;
+            background-size: cover;
+
+        }
+        tr{
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>목록</h1>
