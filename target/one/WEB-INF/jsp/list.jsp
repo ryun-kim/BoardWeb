@@ -19,9 +19,7 @@
     </style>
 </head>
 <body>
-    <div>
-        <a href="/write"><input type="button" value="글쓰기"></a>
-    </div>
+
     <table>
         <tr>
             <th>번호</th>
@@ -42,5 +40,8 @@
         </tr>
         <% } %>
     </table>
+    <div>
+        <a href="/write"><input type="button" value="글쓰기"></a>
+    </div>
 </body>
 </html>
