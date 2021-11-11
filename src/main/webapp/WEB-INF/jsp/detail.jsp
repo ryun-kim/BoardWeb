@@ -17,7 +17,16 @@
         <div>작성일시 :<%= vo.getRdt() %> </div>
         <div> <%= vo.getCtnt() %> </div>
         <div>
-            <a href="/list"><button type="button" value="뒤로가기"></button></a>
+            <a href="/del?iboard=<%= vo.getIboard()%>">
+                <input type="button" value="삭제">
+            </a>
+            <a href="mod?iboard=<%= vo.getIboard()%>">
+                <input type="button" value="수정">
+            </a>
+            <a href="/list">
+                <input type="button" value="리스트로 돌아가기">
+            </a>
         </div>
+
 </body>
 </html>

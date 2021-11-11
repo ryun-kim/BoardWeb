@@ -19,6 +19,6 @@
             <input type="reset" value="초기화">
         </div>
     </form>
-    <a href="/list"><button type="button" value="뒤로가기"></button></a>
+
 </body>
 </html>
