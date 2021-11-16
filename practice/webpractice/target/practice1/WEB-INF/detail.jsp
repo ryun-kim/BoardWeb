@@ -13,9 +13,9 @@
 <body>
     <h1>글 내용</h1>
     <div>제목 : <%= vo.getTitle()%></div>
-    <div>작성자 : <%= vo.getWriter()%></div>
-    <div>작성일시 : <%= vo.getRdt()%></div>
+    <div>작성자 : <a href="/writelist?writer=<%= vo.getWriter()%>"><%= vo.getWriter()%></a></div>
     <div> <%= vo.getCtnt()%> </div>
+    <div>작성일시 : <%= vo.getRdt()%></div>
     <div>
         <a href="/del?iboard=<%= vo.getIboard() %>">
             <input type="button" value="글 삭제 하기">

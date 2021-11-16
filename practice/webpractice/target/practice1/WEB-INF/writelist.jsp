@@ -36,6 +36,8 @@
         </tr>
         <% } %>
     </table>
-
+    <div>
+        <a href="/list"><input type="button" value="리스트로 돌아가기"></a>
+    </div>
 </body>
 </html>
