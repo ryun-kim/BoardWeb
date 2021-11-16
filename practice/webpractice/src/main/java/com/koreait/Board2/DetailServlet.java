@@ -13,10 +13,18 @@ public class DetailServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         String striboard = req.getParameter("iboard");
+
+
         int iboard = Integer.parseInt(striboard);
         BoardVO vo = new BoardVO();
         vo.setIboard(iboard);
+        int previboard = DAO.selPrevIboard(vo);
+        int nextiboard= DAO.selNextIboard(vo);
+
         BoardVO vvo = DAO.selBoardDetail(vo);
+        req.setAttribute("previboard",previboard);
+        req.setAttribute("nextiboard",nextiboard);
+
         req.setAttribute("godata", vvo);
 
         String path = "/WEB-INF/detail.jsp";
